@@ -1,16 +1,10 @@
 ## Extra notes
 
-Meet first thing in the morning, meet 1:30, then meet at 4:30, he will take breaks exactly at the usual times (3 breaks)
-
-He says he will try to point us first in the right direction rather than directly answering it
+meet 1:30, 4:30
 
 ## Project Specification: QA Store
 
-​​Table of Contents
-
-Introduction
-
-The purpose of this document is to outline the group project specification that you will be working on during the final weeks of training. This project will encapsulate concepts from all core training modules, including:
+encapsulate concepts from all core training modules, including:
 
 Agile & Project Management
 
@@ -24,9 +18,9 @@ Full-Stack Development Technologies
 
 ## Objective
 
-The overall objective of the project is:
+To create a simple online storefront, fully conforming to a provided client specification. 
 
-To create a simple online storefront, fully conforming to a provided client specification. This will involve the use of supporting tools, methodologies and technologies that encapsulate all modules covered during training.
+This will involve the use of supporting tools, methodologies and technologies that encapsulate all modules covered during training.
 
 Your team is tasked with building an easy-to-use and attractive website that provides information about various products, product categories, pricing, and upcoming sales.
 
@@ -44,37 +38,23 @@ You are required to plan your approach using the design techniques you have lear
 
 The minimum requirements for this project are as follows:
 
-Full commitment to an Agile approach, including daily stand-up meetings and utilisation of Sprints, user stories, acceptance criteria, story points, and effective communication within the team.
+***AGILE*** Full commitment to an Agile approach, including daily stand-up meetings and utilisation of Sprints, user stories, acceptance criteria, story points, and effective communication within the team.
 
-A Kanban board with full expansion on user stories and tasks needed to complete the project, along with a record of any issues or risks encountered during project creation.
+***KANBAN via JIRA*** A Kanban board with full expansion on user stories and tasks needed to complete the project, along with a record of any issues or risks encountered during project creation.
 
-Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.
+***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.
+
+***MySQL*** Database Management System
+
+***PYTHON*** Back-End Programming Language
+
+***FLASK*** API Development Platform
+
+***HTML, CSS, JAVASCRIPT*** Front-End Development Framework
 
 You should consider the concept of MVP (Minimum Viable Product) as you plan your project.
 
 Ensure that you complete all the Client requirements before adding extra functionality that is not explicitly specified.
-
-## Constraints
-
-The time constraints for this application will be discussed when this specification has been distributed to you.
-
-The application must strictly adhere to the following technological constraints:
-
-Version Control System: Git
-
-Source Code Management: GitHub
-
-Kanban Board: Jira
-
-Full-Stack Development Technologies:
-
-Database Management System: MySQL
-
-Back-End Programming Language: Python
-
-API Development Platform: Flask
-
-Front-End Development Framework: HTML, CSS, JavaScript
 
 ## Deliverable
 
@@ -90,7 +70,7 @@ All supporting documentation for your project should be included in your remote 
 
 These requirements are regarded by the client as essential components of the online storefront, thus they should be part of your Minimum Viable Product (MVP).
 
-### Home Page:
+### Home Page
 
 The online storefront should have a welcoming home page. The home page shall:
 
@@ -104,7 +84,7 @@ Communicate the site's purpose to the visitors
 
 Have pictures or graphics that are relevant to the products being sold
 
-### Product Listing Page:
+### Product Listing Page
 
 The site needs a page that lists all available products. This page should:
 
@@ -116,7 +96,7 @@ Have at least 4 different product images on display
 
 Each product should have its own dedicated page with more details
 
-### Category Page:
+### Category Page
 
 The site should have a page dedicated to product categories. This page should:
 
@@ -126,7 +106,7 @@ Display different product categories
 
 Provide users the ability to view products by category
 
-### Cart Page:
+### Cart Page
 
 The site should have a dedicated page for the shopping cart. This page should:
 
@@ -138,7 +118,7 @@ Provide users the ability to modify the quantity of each product in the cart
 
 Have an option to proceed to the checkout page
 
-### Checkout Page:
+### Checkout Page
 
 The site should have a page dedicated to checking out. This page should:
 
@@ -148,7 +128,7 @@ Display a summary of the cart
 
 Allow users to enter their shipping information
 
-### Payment Page:
+### Payment Page
 
 The site needs a page for processing payments. This page should:
 
@@ -158,7 +138,7 @@ Collect payment information from the users such as cardholder's name, card numbe
 
 Include a mechanism for passing on the payment details to a mock external payment processor
 
-### Contact Us Page:
+### Contact Us Page
 
 The site should have a page dedicated to providing contact information for the store. This page should:
 
@@ -168,7 +148,7 @@ Include store address, phone number, and email
 
 Include a contact form for users to submit inquiries or feedback
 
-### About Us Page:
+### About Us Page
 
 There should be an About Us page. This page should:
 
@@ -188,7 +168,7 @@ All of these are deemed as 'essential' components and should be part of your Min
 
 These are considered 'desirable' components of the online storefront by the Client, and therefore should not be part of your MVP, but can be added later on.
 
-### Search Functionality:
+### Search Functionality
 
 The site should allow users to search for products.
 
@@ -196,7 +176,7 @@ Be accessible from all pages of the site
 
 Return a list of products that match the search criteria
 
-### Page Header & Footer:
+### Page Header & Footer
 
 Each page of the site should contain a consistent header and footer, with links to commonly accessed pages.
 
@@ -204,7 +184,7 @@ The footer should be identical on all pages of the site.
 
 The footer should link to the Home Page, About Us, and Contact Page.
 
-### Development Process Description:
+### Development Process Description
 
 The About Us page should include a description of the development process used to build the site.
 
@@ -216,7 +196,7 @@ The page should explain how the team used Git and Jenkins for version control an
 
 The section of the page dedicated to this content should be visibly distinct and separate from the other content on the page.
 
-### Custom Logo:
+### Custom Logo
 
 The site should have a custom logo on the front page that depicts the site’s name and a graphic relevant to the products being sold.
 
