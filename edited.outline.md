@@ -2,47 +2,38 @@
 
 meet 1:30, 4:30
 
-## Project Specification: QA Store
-
-encapsulate concepts from all core training modules, including:
-
-Agile & Project Management
-
-Databases
-
-Programming Fundamentals
-
-Front-End Web Technologies
-
-Full-Stack Development Technologies
-
-## Objective
-
-To create a simple online storefront, fully conforming to a provided client specification. 
-
-This will involve the use of supporting tools, methodologies and technologies that encapsulate all modules covered during training.
-
-Your team is tasked with building an easy-to-use and attractive website that provides information about various products, product categories, pricing, and upcoming sales.
-
-Some features have been identified by the client as "essential", while others are "desirable".
-
-Prioritisation of these features is key to the success of your team.
-
-There is time for two 2-day Sprints before the site is scheduled to "go live".
+Workshops aren't strictly marked like 'projects'. It's more of a feedback at the end kind of thing than getting a particular mark
 
 If you wish to use any technologies which have not been covered as part of your training, you must consult your trainer first.
 
-You are required to plan your approach using the design techniques you have learned.
+All supporting documentation for your project should be included in your remote repository at the close of business on the day of presenting your project.
+
+are we presenting it to anyone at the end?
+
+## Plan
+
+1. Set up KanBan board
+2. Set up Git feature branch model
+3. Plan out Agile
+4. Look on YouTube for ideas for One Piece
+
+## Project Specification: QA Store
+
+Create an online storefront
+
+fully conforming to a provided client specification.
+
+easy-to-use and attractive website 
+
+that provides information about various products, product categories, pricing, and upcoming sales.
 
 ## Scope
 
-The minimum requirements for this project are as follows:
+***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. Prioritisation of these features is the key to success. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. the rest should be fine even solo.
 
-***AGILE*** Full commitment to an Agile approach, including daily stand-up meetings and utilisation of Sprints, user stories, acceptance criteria, story points, and effective communication within the team.
+***KANBAN via JIRA*** A Kanban board with full expansion on user stories and tasks needed to complete the project, along with a record of any issues or risks encountered during project creation.-> You are required to plan your approach using the design techniques you have learned. be required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time. (You should have a kanban board for the planning stage. The screenshots would be in the README of the repo (which will act as the documentation for the project). You could put a description of what you did in the README if you prefer)
 
-***KANBAN via JIRA*** A Kanban board with full expansion on user stories and tasks needed to complete the project, along with a record of any issues or risks encountered during project creation.
-
-***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.
+***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.-> You will be required to utilize the Feature-Branch Model, and to push a working copy of your code to the main branch regularly. It is recommended to use the feature- naming strategy for your feature branches.
 
 ***MySQL*** Database Management System
 
@@ -50,7 +41,7 @@ The minimum requirements for this project are as follows:
 
 ***FLASK*** API Development Platform
 
-***HTML, CSS, JAVASCRIPT*** Front-End Development Framework
+***HTML, CSS, JAVASCRIPT*** Front-End Development Framework, use Bootstrap
 
 You should consider the concept of MVP (Minimum Viable Product) as you plan your project.
 
@@ -58,13 +49,9 @@ Ensure that you complete all the Client requirements before adding extra functio
 
 ## Deliverable
 
-The final deliverable for this project is the completed application with full documentation around utilisation of supporting tools. This will require a fully functioning application.
+full documentation around utilisation of supporting tools
 
-Given the above, you will therefore be required to track your designs and workflow (e.g. through screenshots) throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time.
-
-You will be required to utilize the Feature-Branch Model, and to push a working copy of your code to the main branch regularly. It is recommended to use the feature- naming strategy for your feature branches.
-
-All supporting documentation for your project should be included in your remote repository at the close of business on the day of presenting your project.
+fully functioning application
 
 ## Website Requirements
 
@@ -138,6 +125,8 @@ Collect payment information from the users such as cardholder's name, card numbe
 
 Include a mechanism for passing on the payment details to a mock external payment processor
 
+(just a mock one, able to add up what's in a basket)
+
 ### Contact Us Page
 
 The site should have a page dedicated to providing contact information for the store. This page should:
@@ -192,7 +181,7 @@ The page should link to various resources that provide further insight into the 
 
 The page should describe the development process at a high level.
 
-The page should explain how the team used Git and Jenkins for version control and continuous integration and how it affected the creation of the site.
+The page should explain how the team used Git and Jenkins for version control and how it affected the creation of the site. (You can add Jenkins functionality if you like, but it's not part of the MVP. Plus you can't really use the full functionality of Jenkins until you start looking at docker too)
 
 The section of the page dedicated to this content should be visibly distinct and separate from the other content on the page.
 
