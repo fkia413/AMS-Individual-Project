@@ -2,17 +2,13 @@
 
 1. Set up KanBan board - done
 2. Plan out Agile - pending
-3. Set up Git feature branch model
+3. Set up Git feature branch model - done
 4. Look on YouTube for ideas for One Piece
 5. Build website (est 8 hours 10 mins)
 
 ## Questions
 
-1. Ask where to put acceptance criteria in Kanban board and show what I've done so far
-2. We can't put sprints onto a Kanban board??? But the brief says we need to so do we just write it down?
-3. We can't do pull requests since we're solo right?
-4. Akber will ask about the payment page
-5. The feature branch thing for github like do we take screenshots of our bash terminal orrr
+1. H
 
 ## Project Specification: QA Store
 
@@ -26,15 +22,15 @@ that provides information about various products, product categories, pricing, a
 
 ## Scope
 
-***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. Prioritisation of these features is the key to success. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. the rest should be fine even solo.
+***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. you should be planning your actual work time in easy to manage chunks, database then html etc. just describe how you've done it, no need to add it to the kanban board. so say how i broke it down
 
-***KANBAN via JIRA*** A Kanban board with full expansion on user stories and tasks needed to complete the project - The user stories should be on the project management board, which you can then include screenshot(s) of in the README. you can even put a task breakdown into the description of each of your user stories if you want to keep it well structured. create user stories for the new optional ones like logo as well. keep taking screenshots of kanban board so right at the beginning without having added in user stories, then once you've added, then at the end
+***KANBAN via JIRA*** user stories, tasks, put a task breakdown into the description of each of your user stories if you want to keep it well structured. create user stories for the new optional ones like logo as well. keep taking screenshots of kanban board. put acceptance criteria in description of user stories, only need to screenshot a few key user stories, tasks, acceptance criteria. don't have to screenshot 30 user stories and 30 acceptance criteria or even write them all so that's a time saver. can also do 1 acceptance criteria for 3 user stories e.g. for the home page, for the log in button (just the key features to mention in the README)
 
 along with a record of any issues or risks encountered during project creation.-> required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time. (kanban board for the planning stage. The screenshots would be in the README of the repo (which will act as the documentation for the project). You could put a description of what you did in the README if you prefer)
 
-***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.-> You will be required to utilize the Feature-Branch Model, and to push a working copy of your code to the main branch regularly. It is recommended to use the feature- naming strategy for your feature branches.
+***GITHUB*** Feature-Branch Model, push a working copy of your code to the main branch regularly. use the feature- naming strategy. so make a create.py and branch off called feature-create-database, then merge that into the main branch, maybe just have 2 feature branches 1 for html and one for back end. will evidence this by screenshotting the network graph on the github repo in the insights section
 
-***MySQL*** Database Management System
+***MySQL*** Database Management System, Is there a specific way we should populate the database tables? It depends on the table. For testing/dummy data purposes you can use either the create.py (if you're using sqlite) or you can use workbench (if you're using MySQL). by the end, at least the customers should be input using the html forms, and the orders table is populated by clicking on products and adding them to a cart
 
 ***PYTHON*** Back-End Programming Language
 
@@ -108,7 +104,7 @@ Display a summary of the cart
 
 Allow users to enter their shipping information
 
-### Payment Page - 1 hour
+### Payment Page - 1 hour, Akber will ask about the payment page - we'll figure it out later
 
 The site needs a page for processing payments. This page should:
 

@@ -17,5 +17,3 @@
 3. Given the site visitor is on the home page, when they take a look at the information present, then they will be able to easily identify the purpose of the website and the types of products that are on sale.
 
 ## User Story: Why product listing page?
-
-1. 
