@@ -22,7 +22,7 @@ that provides information about various products, product categories, pricing, a
 
 ## Scope
 
-***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. you should be planning your actual work time in easy to manage chunks, database then html etc. just describe how you've done it, no need to add it to the kanban board. so say how i broke it down. required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time
+***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. you should be planning your actual work time in easy to manage chunks, database then html etc. just describe how you've done it, no need to add it to the kanban board. so say how i broke it down. required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time write down sprints where i plan what to do each time. 
 
 ***KANBAN via JIRA*** not everything will have an acceptance critereia just make 6-7 user stories for the entier project, tasks, put a task breakdown into the description of each of your user stories if you want to keep it well structured. create user stories for the new optional ones like logo as well. keep taking screenshots of kanban board. put acceptance criteria in description of user stories, only need to screenshot a few key user stories, tasks, acceptance criteria. don't have to screenshot 30 user stories and 30 acceptance criteria or even write them all so that's a time saver. can also do 1 acceptance criteria for 3 user stories e.g. for the home page, for the log in button (just the key features to mention in the README). along with a record of any issues or risks encountered during project creation.-> . README of the repo will act as the documentation for the project.
 
@@ -50,7 +50,7 @@ fully functioning application
 
 These requirements are regarded by the client as essential components of the online storefront, thus they should be part of your Minimum Viable Product (MVP).
 
-### Home Page - 1.5 hours, use Bootstrap
+### Home Page - 1.5 hours, use Bootstrap 2:40
 
 The online storefront should have a welcoming home page. The home page shall:
 
@@ -172,9 +172,9 @@ The page should explain how the team used Git and Jenkins for version control an
 
 The section of the page dedicated to this content should be visibly distinct and separate from the other content on the page.
 
-### Custom Logo - pixlr, 20 mins
+<!-- ### Custom Logo - pixlr, 20 mins -->
 
-The site should have a custom logo on the front page that depicts the site’s name and a graphic relevant to the products being sold.
+<!-- The site should have a custom logo on the front page that depicts the site’s name and a graphic relevant to the products being sold.
 
 The logo must be original.
 
@@ -184,7 +184,7 @@ The logo must appear on the front page.
 
 The logo should complement the overall design and aesthetic of the site.
 
-Please note, while these features would certainly enhance the user experience of the online storefront, they are not essential for the initial version of the site. Therefore, they should be considered for future development phases.
+Please note, while these features would certainly enhance the user experience of the online storefront, they are not essential for the initial version of the site. Therefore, they should be considered for future development phases. -->
 
 ## Extra notes
 
