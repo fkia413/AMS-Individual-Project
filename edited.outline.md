@@ -6,9 +6,18 @@
 4. Look on YouTube for ideas for One Piece
 5. Build website (est 8 hours 10 mins)
 
+Finish all website pages for html and css
+Add javascript functionality to website 
+Write README documentation
+Finish user stories, acceptance criteria etc. for kanban board and screenshot
+Create database (sql, python)
+Create api using flask
+Andrei said there's 2 ways to create database either via SQL Workbench or via Flask so using create.py app.py etc. so I'll do the Flask one as that's more recent 
+
 ## Questions
 
-1. H
+1. What does it mean by header on every page? Is that the nav bar or is it something extra?
+Remeber to switch to feature-html when working on website but also only view the edited outline when on main branch cause the updated version doesn't show for some reason eh
 
 ## Project Specification: QA Store
 
