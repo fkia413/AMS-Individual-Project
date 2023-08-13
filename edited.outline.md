@@ -54,8 +54,8 @@ These requirements are regarded by the client as essential components of the onl
 
 The online storefront should have a welcoming home page. The home page shall:
 
-1. Be visually appealing
-2. Serve as the default for the entire site. Allow users to navigate to other sections of the site from here
+<!-- 1. Be visually appealing
+2. Serve as the default for the entire site. Allow users to navigate to other sections of the site from here -->
 3. Communicate the site's purpose to the visitors. Have pictures or graphics that are relevant to the products being sold
 
 ### Product Listing Page - 1 hour
