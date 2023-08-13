@@ -26,13 +26,13 @@ that provides information about various products, product categories, pricing, a
 
 ## Scope
 
-***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. Prioritisation of these features is the key to success. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. the rest should be fine even solo.
+***AGILE*** utilisation of Sprints, user stories, acceptance criteria, story points. Prioritisation of these features is the key to success. There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. the rest should be fine even solo. write down sprints where i plan what to do each time. 
 
-***KANBAN via JIRA*** A Kanban board with full expansion on user stories and tasks needed to complete the project - The user stories should be on the project management board, which you can then include screenshot(s) of in the README. you can even put a task breakdown into the description of each of your user stories if you want to keep it well structured. create user stories for the new optional ones like logo as well. keep taking screenshots of kanban board so right at the beginning without having added in user stories, then once you've added, then at the end
+***KANBAN via JIRA*** full expansion on user stories and tasks needed to complete the project - The user stories should be on the project management board, which you can then include screenshot(s) of in the README. you can even put a task breakdown into the description of each of your user stories if you want to keep it well structured. create user stories for the new optional ones like logo as well. keep taking screenshots of kanban board so right at the beginning without having added in user stories, then once you've added, then at the end. put acceptance criteria in description of user story. 
 
 along with a record of any issues or risks encountered during project creation.-> required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time. (kanban board for the planning stage. The screenshots would be in the README of the repo (which will act as the documentation for the project). You could put a description of what you did in the README if you prefer)
 
-***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.-> You will be required to utilize the Feature-Branch Model, and to push a working copy of your code to the main branch regularly. It is recommended to use the feature- naming strategy for your feature branches.
+***GITHUB*** Code integrated into a central repository on a Version Control System, utilizing issues, pull requests, merge requests, and any other aspects deemed appropriate.-> You will be required to utilize the Feature-Branch Model, and to push a working copy of your code to the main branch regularly. It is recommended to use the feature- naming strategy for your feature branches. just have 2 branches and call them feature-html and feature-backend. screenshot the insights page with the graph for evidence
 
 ***MySQL*** Database Management System
 
@@ -56,7 +56,7 @@ fully functioning application
 
 These requirements are regarded by the client as essential components of the online storefront, thus they should be part of your Minimum Viable Product (MVP).
 
-### Home Page - 1.5 hours, use Bootstrap
+### Home Page - 1.5 hours, use Bootstrap 2:40
 
 The online storefront should have a welcoming home page. The home page shall:
 
@@ -178,9 +178,9 @@ The page should explain how the team used Git and Jenkins for version control an
 
 The section of the page dedicated to this content should be visibly distinct and separate from the other content on the page.
 
-### Custom Logo - pixlr, 20 mins
+<!-- ### Custom Logo - pixlr, 20 mins -->
 
-The site should have a custom logo on the front page that depicts the site’s name and a graphic relevant to the products being sold.
+<!-- The site should have a custom logo on the front page that depicts the site’s name and a graphic relevant to the products being sold.
 
 The logo must be original.
 
@@ -190,7 +190,7 @@ The logo must appear on the front page.
 
 The logo should complement the overall design and aesthetic of the site.
 
-Please note, while these features would certainly enhance the user experience of the online storefront, they are not essential for the initial version of the site. Therefore, they should be considered for future development phases.
+Please note, while these features would certainly enhance the user experience of the online storefront, they are not essential for the initial version of the site. Therefore, they should be considered for future development phases. -->
 
 ## Extra notes
 
