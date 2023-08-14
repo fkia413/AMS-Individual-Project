@@ -45,6 +45,25 @@
     </div>
     </nav>
 
+	<h1>Your Cart</h1>
+	<table>
+	<tr>
+	<th>Order Detail ID</th>
+	<th>Order ID</th>
+	<th>Quantity</th>
+	<th>Price</th>
+	</tr>
+			{% for order in all_orders %}
+	<tr>
+	<td>{{ order.order_detail_id }}</td>
+	<td>{{ order.order_id }}</td>
+	<td>{{ order.quantity }}</td>
+	<td>{{ order.price }}</td>
+	</tr>
+			{% endfor %}
+	</table>
+	<h3>Total Amount: {{ total_amount }}</h3>
+
 	<!-- - Footer section  -->
 <footer>
 	<div class="container-fluid padding">

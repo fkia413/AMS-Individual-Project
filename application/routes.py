@@ -15,15 +15,13 @@ def prodcuts():
 def categories():
     return render_template('category.html')
 
-@app.route("/cart")
+@app.route('/cart')
 def cart():
-    return render_template('cart.html')
-def read():
     all_orders = Order_detail.query.all()
-    order_string = ""
+    total_amount = 0
     for order in all_orders:
-        order_string += "<br>"+ order.order_detail_id + order.order_id+ order.quantity  + str(order.price)
-    return order_string
+        total_amount += order.quantity * order.price
+    return render_template('prodcut2.html', all_orders=all_orders, total_amount=total_amount)
 
 @app.route("/shipping")
 def shipping():
