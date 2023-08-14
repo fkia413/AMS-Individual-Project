@@ -26,7 +26,7 @@ Finally, show some screenshots of entire Kanban board how it looked at the begin
 
 8. Licensing: i used vscode i used mysql for database
 
-9. Contributors: w3schools, Qa community, bootstrap
+9. Contributors: w3schools, Qa community, bootstrap, Innocent website
 
 10. Acknowledgements: to trainer, colleagues etc.
 
