@@ -16,8 +16,8 @@ Andrei said there's 2 ways to create database either via SQL Workbench or via Fl
 
 ## Questions
 
-1. What does it mean by header on every page? Is that the nav bar or is it something extra?
-Remeber to switch to feature-html when working on website but also only view the edited outline when on main branch cause the updated version doesn't show for some reason eh
+Remember to switch to feature-html when working on website but also only view the edited outline when on main branch cause the updated version doesn't show for some reason eh
+1.Ask about webhook implemented to poll repo -> how to get full marks in the integration section -> have to do that in the cloud or get GCP 3 month trial. to set up webhook need to set up location of Jenkins on Github which is compliiicaateddddd......[leave to the end]
 
 ## Project Specification: QA Store
 
@@ -169,7 +169,7 @@ The footer should be identical on all pages of the site.
 
 The footer should link to the Home Page, About Us, and Contact Page.
 
-### Development Process Description - 20 mins
+### Development Process Description - 20 mins -> Duplicate from README? yep
 
 The About Us page should include a description of the development process used to build the site.
 
