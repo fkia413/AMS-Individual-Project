@@ -45,7 +45,7 @@
     </div>
     </nav>
 
-	<h1>Your Cart</h1>
+	<!-- <h1>Your Cart</h1>
 	<table>
 	<tr>
 	<th>Order Detail ID</th>
@@ -62,7 +62,24 @@
 	</tr>
 			{% endfor %}
 	</table>
-	<h3>Total Amount: {{ total_amount }}</h3>
+	<h3>Total Amount: {{ total_amount }}</h3> -->
+
+
+<!-- test -->
+    <header class="cart-header">
+        <h1>Your Cart</h1>
+    </header>
+    <main class=cart-main>
+        <div class="cart-items">
+            <!-- Product items will be added dynamically using JavaScript -->
+        </div>
+        <div class="total">
+            Total: <span id="total-price">$0.00</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </main>
+    <script src="/application/static/script.js"></script>
+
 
 	<!-- - Footer section  -->
 <footer>
