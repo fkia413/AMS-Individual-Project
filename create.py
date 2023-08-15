@@ -1,6 +1,7 @@
 from application import db, app
-from application.models import Customer, Basket, Product, Basket_details
+from application.models import Customer, Order, Product, Order_detail
 from application import routes
+
 
 with app.app_context():
     db.drop_all()
@@ -18,19 +19,17 @@ with app.app_context():
     db.session.add(pear)
     db.session.commit()
 
-    testuser = Basket_details(order_id=1, product=banana, quantity=10)
-    testuser.price = banana.price
+    testuser = Order_detail(order_id=1, product=banana, quantity=10)
+    testuser.price = banana.price 
     db.session.add(testuser)
     db.session.commit()
 
-    testapple = Basket_details(order_id=2, product=apple, quantity=5)
-    testapple.price = apple.price
+    testapple = Order_detail(order_id=2, product=apple, quantity=5)
+    testapple.price = apple.price 
     db.session.add(testapple)
     db.session.commit()
 
-    testuser = Basket_details(order_id=3, product=pear, quantity=6)
+    testuser = Order_detail(order_id=3, product=pear, quantity=6)
     testuser.price = pear.price
     db.session.add(testuser)
     db.session.commit()
-
-# Replace variable names banana with others 
