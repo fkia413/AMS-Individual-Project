@@ -4,6 +4,9 @@
 
 1. Where do I put Agile in the technology overview section? with emphasis on how Agile methodology shaped the application over time 
 
+We discovered (after a looooong process ) that if you have jenkins installed in windows and you run into an error saying that your 'SQLALCHEMY_DATABASE_URI' isn't set
+you have to include the 'set DATABASE_URI=mysql+pymysql://etc' as the first command in the Jenkins build step
+
 ## Contents
 
 1. Overview of technologies used: Readme file is very well detailed and structured. App adheres to agreed standards (app structure, technologies, etc.) -> At the top say how im going to use the techonologies and list them as an overview.
@@ -20,7 +23,10 @@ Finally, show some screenshots of entire Kanban board how it looked at the begin
 
 5. ERD Diagram: screenshot and give 1 sentence to explain "this is the tables i have and how they relate to each other"
 
-6. Analysis of test reports
+6. Jenkins section - included test reports as a sub-section and analyse them
+
+the way that im using jenkins as a pipeline means i can automate the code.
+jenkins also handled my test automation and some screenshots of tests passing and faileing and wha ti encountered with the test.
 
 7. Future Steps: further analysis, what would i do next if i continued with this project id add this feature create new database relationship etc.
 
@@ -30,15 +36,13 @@ Finally, show some screenshots of entire Kanban board how it looked at the begin
 
 10. Acknowledgements: to trainer, colleagues etc.
 
-11. Versioning: each commit can store as separate versions and will use those versions in docker images as the tags, include info about what each version added to the project in the README if I have different versions. can omit this if I don't have different versions
-
 ## 1. Project Overview
 
 I have created an online storefront that fully conforms to a provided client specification. The website was made with ease of use and attractiveness in mind, and provides information about various products, product categories, pricing, and upcoming sales. 
 
 I have used the following technologies in my project:
 
-1. Kanban (via Jira) for project management
+1. Kanban (via Jira) for project management and agile framework
 2. Git as the version control system
 3. GitHub for source code management 
 4. HTML, CSS, JavaScript and Bootstrap for front-end development

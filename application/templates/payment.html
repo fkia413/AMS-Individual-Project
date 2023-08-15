@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Simple form</title>
+    </head>
+    <body>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.first_name.label }} {{ form.first_name }}
+                <br>
+                {{ form.last_name.label }} {{ form.last_name }}
+                <br>
+                <br>
+                {{ form.email.label }} {{ form.email }}
+                <br>
+                <br>
+                {{ form.phone_num.label }} {{ form.phone_num }}
+                <br>
+                <br>
+                {{ form.address.label }} {{ form.address }}
+                <br>
+                <br>
+                <br>
+                <p>Enter Payment Details Below</p>
+                {{ form.card_num.label }} {{ form.card_num }}
+                <br>
+                {{ form.cvc_num.label }} {{ form.cvc_num }}
+                <br>
+
+                <br>
+
+                <br>
+                {{ form.submit }}
+                <br>
+            {{ message }}
+            </form>
+        </div>
+    </body>
+</html>

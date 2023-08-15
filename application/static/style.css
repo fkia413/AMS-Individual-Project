@@ -318,3 +318,151 @@ figure {
 #checkout-btn:hover {
   background-color: #c0392b;
 }
+
+/* Home Page test */
+
+/* Update navbar background color and text color */
+.navbar {
+  background-color: #001f3f;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+  color: #f39c12 !important;
+}
+
+/* Update carousel captions font size and styling */
+.carousel-caption h1 {
+  font-size: 400%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 150%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+/* Enhance jumbotron styling */
+.jumbotron {
+  padding: 3rem;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Update footer background color and text color */
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding-top: 2rem;
+}
+
+/* Update footer link colors */
+footer a {
+  color: #f8f9fa;
+}
+
+/* Add social media icons to the footer */
+.footer-icons {
+  margin-top: 1rem;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #f8f9fa;
+}
+
+/* Remove margin and padding from .jumbotron */
+.jumbotron {
+  padding: 3rem 0; /* Adjust top and bottom padding */
+  border-radius: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 0%;
+}
+
+/* Reduce padding from footer */
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding-top: 1rem; /* Adjust top padding */
+  padding-bottom: 1rem; /* Add padding-bottom */
+}
+
+/* Update jumbotron styling */
+.jumbotron {
+  padding: 3rem 0;
+  border-radius: 0;
+  background-image: url('jumbotron-background.jpg'); /* Add your background image URL */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  /* color: #fff; */
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron .btn {
+  background-color: #f39c12;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+.jumbotron .btn-primary {
+  background-color: #34495e;
+}
+
+.jumbotron .btn:hover {
+  background-color: #e74c3c;
+  cursor: pointer;
+}
+
+/* Update button styling to stand out more */
+.carousel-caption .btn {
+    background-color: rgba(255, 255, 255, 0.3); /* Add a semi-transparent white background */
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
+}
+
+.carousel-caption .btn-primary {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for primary button */
+}
+
+.carousel-caption .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Lighten the overlay on hover */
+    cursor: pointer;
+}
+
+.bean-img img {
+  display: inline-block;
+  height: 70%;
+  width: 50%;
+}
