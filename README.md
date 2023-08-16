@@ -112,10 +112,7 @@ These are the tables I have. They all have some relation to each other.
 
 I used Jenkins as a pipeline to open my website while I was working on it. Jenkins also handled my test automation. The majority of the tests failed, but some of them passed. 
 
-![MicrosoftTeams-image (3)](https://github.com/fkia413/ProjectRepo/assets/131884777/8e2645dd-45ff-42d7-ab12-2ea44ffb0304)
-
-
-included test reports as a sub-section and analyse them
+![jenkins](https://github.com/fkia413/ProjectRepo/assets/131884777/485f597a-732d-4a55-8fc2-116aa6070c59)
 
 
 ## 7. Future Steps
