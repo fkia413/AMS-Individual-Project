@@ -54,4 +54,24 @@ My overarching objective for this project was to create a fully functioning appl
 
 ## 2. How I used Agile Methodology
 
-How I organised Sprints: utilisation of Sprints, There is time for two 2-day Sprints before the site is scheduled to "go live". take 10 minutes in each morning to plan out your day. you should be planning your actual work time in easy to manage chunks, database then html etc. just describe how you've broke it down. required to track your designs and workflow throughout the duration of the project, with emphasis on how Agile methodology shaped the application over time write down sprints where i plan what to do each time. prioritised the mvp so worked on those first, then scheduled time slots for extra features 
+I spent 10 minutes at the start of each day planning what I would work on. I sorted my tasks by priority, where the MVP tasks were at the top. I planned my work time in time slots of 2 hours, with a 10 minute break after. The typical day consisted of 4 time slots of 2 hours. This meant that I was able to give ample time to my project and ensure that I covered not only all of the MVPs, but also the extra features. I counted a sprint as 2 days of work, and at the end of each sprint i.e. on Friday evening, Sunday evening and Tuesday evening, I reviewed the progress that I made and planned the work for my next sprint accordingly. I didn't overcomplicate my planning because it was an individual project so I didn't have to manage a team's workload. 
+
+## 3. How I used my Kanban board
+
+### Epics, User Stories, Tasks and Acceptance Criteria
+
+I created 7 user stories that encompassed the key areas of my project, including the home page and log in button. Inside each of my user stories, I stored all of the related tasks to keep it well-structured. I also included acceptance criteria in the description of the user stories to make my objectives more clear.
+
+Also included some risks which I put in my risk assessment in the next section.
+
+### Risk Assessment
+
+Add in risk assessment screenshot from excel and summarise it [https://qa-community.co.uk/~/_/learning/agile/agile--risk-assessments] ("a record of any issues or risks encountered during project creation, Based on results, changes were made to the solution and discussed at a good level"). 
+
+### Evolution of Ideas
+
+Also in this space, Showcased evolution of ideas from base design to final designs -> refactoring code because you wanted it to do something else so take screenshot before and after i encourntered soem errors where i was able to improve and refactor my code.
+
+### Summary of Kanban board
+
+Finally, show some screenshots of entire Kanban board how it looked at the beginning vs. middle vs. end. 
