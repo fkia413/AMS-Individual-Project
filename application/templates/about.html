@@ -9,12 +9,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="\application\static\style.css" rel="stylesheet">
+	<link href="\static\style.css" rel="stylesheet">
 </head>
 <body>
+    {% include 'navbar.html' %}
 
 <!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="\application\static\two piece logo 2.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -43,7 +44,7 @@
 			</ul>
 		</div>
     </div>
-    </nav>
+    </nav> -->
 
 <!--- Welcome Section -->
 <div class="container-fluid padding">
@@ -71,7 +72,7 @@
         <p>A month later, we had a fully functional website, enough products to fill a medium-sized swimming pool with, and zero tolerance for the bloke who created our initial voting poll.</p>
 	</div>
 	<div class="col-lg-6 bean-img">
-		<img src="\application\static\disneyland-stand.png" class="img-fluid">
+		<img src="\static\disneyland-stand.png" class="img-fluid">
 	</div>
 </div> 
 </div>
@@ -113,7 +114,7 @@
     <div class="container-fluid padding">
     <div class="row text-center">
         <div class="col-md-4">
-            <img id="footer-logo" src="\application\static\two piece logo 2.png">
+            <img id="footer-logo" src="\static\two piece logo 2.png">
             <hr class="light">
             <p>123-456-7890</p>
             <p>info@twopiece.com</p>
@@ -131,11 +132,11 @@
             <hr class="light">
             <h5>Relevant Links</h5>
             <hr class="light">
-            <a class="footer-padding" href="index.html">Home</a>
+            <a class="footer-padding" href="{{ url_for('home') }}">Home</a>
             <br>
-            <a class="footer-padding" href="about.html">About</a>
+            <a class="footer-padding" href="{{ url_for('about') }}">About</a>
             <br>
-            <a class="footer-padding" href="contact.html">Contact</a>
+            <a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
             <br>
         </div>
         <div class="col-12">

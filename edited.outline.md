@@ -57,117 +57,103 @@ fully functioning application
 
 ## Website Requirements (7.5 hours)
 
-These requirements are regarded by the client as essential components of the online storefront, thus they should be part of your Minimum Viable Product (MVP).
-
-### Home Page - 1.5 hours, use Bootstrap 2:40
+<!-- ### Home Page - 1.5 hours, use Bootstrap 2:40
 
 The online storefront should have a welcoming home page. The home page shall:
 
 <!-- 1. Be visually appealing
 2. Serve as the default for the entire site. Allow users to navigate to other sections of the site from here -->
-3. Communicate the site's purpose to the visitors. Have pictures or graphics that are relevant to the products being sold
+<!-- 3. Communicate the site's purpose to the visitors. Have pictures or graphics that are relevant to the products being --> -->
 
 ### Product Listing Page - 1 hour
 
-The site needs a page that lists all available products. This page should:
+<!-- The site needs a page that lists all available products. This page should:
 
-Be part of the overall site navigation
+Be part of the overall site navigation -->
 
-Display product images, descriptions, and pricing
+<!-- Display product images, descriptions, and pricing
 
-Have at least 4 different product images on display
+<!-- Have at least 4 different product images on display -->
 
-Each product should have its own dedicated page with more details
+Each product should have its own dedicated page with more details 
 
 ### Category Page - 1 hour
 
-The site should have a page dedicated to product categories. This page should:
+<!-- The site should have a page dedicated to product categories. This page should:
 
 Be part of the overall site navigation
 
 Display different product categories
 
-Provide users the ability to view products by category
+Provide users the ability to view products by category -->
 
-### Cart Page = 1 hour
+<!-- ### Cart Page = 1 hour -->
 
-The site should have a dedicated page for the shopping cart. This page should:
+<!-- The site should have a dedicated page for the shopping cart. This page should:
 
 Show all products added by the user to the cart
 
 Display the total price of all products in the cart
 
-Provide users the ability to modify the quantity of each product in the cart
-
-Have an option to proceed to the checkout page
+Provide users the ability to modify the quantity of each product in the cart -->
+<!-- 
+Have an option to proceed to the checkout page -->
 
 ### Checkout Page - 1 hour
 
-The site should have a page dedicated to checking out. This page should:
-
-Be part of the overall site navigation
+<!-- The site should have a page dedicated to checking out. This page should:
 
 Display a summary of the cart
 
-Allow users to enter their shipping information
+Allow users to enter their shipping information -->
 
-### Payment Page - 1 hour, Akber will ask about the payment page - we'll figure it out later
+### Payment Page - 1 hour
 
-The site needs a page for processing payments. This page should:
-
-Be part of the overall site navigation
+<!-- The site needs a page for processing payments. This page should:
 
 Collect payment information from the users such as cardholder's name, card number, expiry date, and security code/CVC
 
 Include a mechanism for passing on the payment details to a mock external payment processor
 
-(just a mock one, able to add up what's in a basket)
+(just a mock one, able to add up what's in a basket) -->
 
-### Contact Us Page - 30 mins
+<!-- ### Contact Us Page - 30 mins -->
 
-The site should have a page dedicated to providing contact information for the store. This page should:
+<!-- The site should have a page dedicated to providing contact information for the store. This page should:
 
 Be part of the overall site navigation
 
 Include store address, phone number, and email
 
-Include a contact form for users to submit inquiries or feedback
+Include a contact form for users to submit inquiries or feedback -->
 
 ### About Us Page - 30 mins
 
-There should be an About Us page. This page should:
+<!-- There should be an About Us page. This page should:
 
 Be part of the overall site navigation
 
 Provide information about the store, its mission, and its history
 
-Include information about the team behind the store
+Include information about the team behind the store -->
 
-In addition to the requirements above, the website should maintain a uniform look and feel across all pages. The navigation menu should be consistent and easily accessible. The website should also be mobile-responsive to ensure a pleasant shopping experience on all devices.
+<!-- In addition to the requirements above, the website should maintain a uniform look and feel across all pages. The navigation menu should be consistent and easily accessible. -->
 
-The site's design should align with the brand's identity and appeal to the target audience. Colours, fonts, and imagery should be selected thoughtfully to create a cohesive and engaging user experience. The site should also load quickly to retain user attention and minimize bounce rates.
+The website should also be mobile-responsive to ensure a pleasant shopping experience on all devices.
 
-All of these are deemed as 'essential' components and should be part of your Minimum Viable Product (MVP). Complete them as soon as possible and then consider adding 'desirable' features.
+The site's design should align with the brand's identity and appeal to the target audience. Colours, fonts, and imagery should be selected thoughtfully to create a cohesive and engaging user experience. 
+
+The site should also load quickly to retain user attention and minimize bounce rates.
 
 ## Website Wishlist (1h 10mins)
 
-These are considered 'desirable' components of the online storefront by the Client, and therefore should not be part of your MVP, but can be added later on.
-
-### Search Functionality - 15 mins
-
-The site should allow users to search for products.
-
-Be accessible from all pages of the site
-
-Return a list of products that match the search criteria
-
-### Page Header & Footer - 15 mins
+<!-- ### Page Header & Footer - 15 mins
 
 Each page of the site should contain a consistent header and footer, with links to commonly accessed pages.
 
 The footer should be identical on all pages of the site.
 
-The footer should link to the Home Page, About Us, and Contact Page.
+The footer should link to the Home Page, About Us, and Contact Page. -->
 
 ### Development Process Description - 20 mins -> Duplicate from README? yep
 

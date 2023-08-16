@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Two Piece</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="\static\style.css" rel="stylesheet">
+</head>
+<body>
+	{% include 'navbar.html' %}
+    <div class="content">
+        <div class="segment"><br> <br>
+                <div class="container">
+                    <img src="static/product-1.png">
+                    <h2 class="header"> One Piece Puffy Pink Hoodie</h2>
+                <div class="segment-content">
+               <p>The comfiest hoodie you will ever wear! Make your uncle jealous.  
+                Made with 100% natural fabric. The making of this hoodie did not harm animals. Made with mammoth fur. Provides a fluffy inside coating made with freshly plucked feathers. [The origin of the feathers is not known].</p> <br>
+                    <p class="fragrance">Price</p>
+                    <p class="fragrance">£1,500</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- - Footer section  -->
+    <footer>
+        <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img id="footer-logo" src="\static\two piece logo 2.png">
+                <hr class="light">
+                <p>123-456-7890</p>
+                <p>info@twopiece.com</p>
+                <p>4 Privet Drive</p>
+                <p>Little Whinging, Surrey</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Our Hours</h5>
+                <hr class="light">
+                <p>Monday: 4pm - 4:30 pm</p>
+                <p>Tuesday-Sunday: closed</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Relevant Links</h5>
+                <hr class="light">
+                <a class="footer-padding" href="{{ url_for('home') }}">Home</a>
+                <br>
+                <a class="footer-padding" href="{{ url_for('about') }}">About</a>
+                <br>
+                <a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
+                <br>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy; twopiece.com</h5>
+            </div>
+        </div> 
+        </div>
+        </footer>
+
+</body>
+</html>

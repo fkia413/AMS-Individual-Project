@@ -9,12 +9,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="\application\static\style.css" rel="stylesheet">
+	<link href="\static\style.css" rel="stylesheet">
 </head>
 <body>
+	{% include 'navbar.html' %}
 
 <!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="\application\static\two piece logo 2.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -43,23 +44,130 @@
 			</ul>
 		</div>
     </div>
-    </nav>
+    </nav> -->
 
-	<!--- Welcome Section -->
+	<!-- Welcome Section -->
 	<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">The Latest Products</h1>
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">All Products</h1>
+			</div>
+			<hr>
+			<div class="col-12">
+				<p class="lead">Browse our products and add to your cart.</p>
+			</div>
 		</div>
-		<hr>
-		<div class="col-12">
-			<p class="lead">A taste of what we have to offer.</p>
 		</div>
-	</div>
+
+		
+	 <!-- Image Gallery Section -->
+		<div class="row gallery-row">
+			<div class="col-12">
+				<h2 class="text-center">Image Gallery</h2>
+			</div>
+			<div class="col-md-4 gallery-item">
+				<img src="\static\product-1.png" alt="Image 1">
+				</div>
+			<div class="col-md-4 gallery-item">
+				<img src="\static\product-2.png" alt="Image 2">
+				</div>
+			<div class="col-md-4 gallery-item">
+				<img src="\static\product-3.png" alt="Image 3">
+				</div>
+			<div class="col-md-4 gallery-item">
+				<img src="\static\product-4.png" alt="Image 4">
+				</div>
+		</div>
+	
+		<!-- Product Descriptions Section -->
+		<div class="row product-description-section">
+			<div class="col-md-3 col-sm-6 product-description">
+				<h3>One Piece Puffy Pink Hoodie</h3>
+				<p>The comfiest hoodie you will ever wear! Make your uncle jealous.</p>
+				<a href="{{ url_for('product1') }}" class="btn btn-primary">View Product</a>
+			</div>
+			<div class="col-md-3 col-sm-6 product-description">
+				<h3>One Piece Mega Massive Mug</h3>
+				<p>This mug makes water taste like coca cola. Try it now! [CAUTION: MAY BE POISONOUS]</p>
+				<a href="{{ url_for('product2') }}" class="btn btn-primary">View Product</a>
+			</div>
+			<div class="col-md-3 col-sm-6 product-description">
+				<h3>One Piece 'Wings of Freedom' Trainers</h3>
+				<p>These shoes will let you fly! [DO NOT TRY THIS] </p>
+				<a href="{{ url_for('product3') }}" class="btn btn-primary">View Product</a>
+			</div>
+			<div class="col-md-3 col-sm-6 product-description">
+				<h3>One Piece Rudolph the Reindeer Mascot</h3>
+				<p>The cutest mascot you will ever own. [DO NOT PLACE IN WATER OR IT WILL MULTIPLY]</p>
+				<a href="{{ url_for('product4') }}" class="btn btn-primary">View Product</a>
+			</div>
+		</div>
+	
+
+
+	<!-- <h2>Products</h2>
+	<table class="product-table">
+	<thead>
+	<tr>
+	<th>Name</th>
+	<th>Description</th>
+	<th>Price</th>
+	<th>Stock Level</th>
+	<th>Action</th>
+	</tr>
+	</thead>
+	<tbody>
+			{% for product in products %}
+	<tr>
+	<td>{{ product.name }}</td>
+	<td>{{ product.description }}</td>
+	<td>{{ product.price }}</td>
+	<td>{{ product.stock_level }}</td>
+	<td>
+	<form action="{{ url_for('add_to_cart') }}" method="post">
+	<input type="hidden" name="product_id" value="{{ product.product_id }}">
+	<input type="submit" value="Add to Cart">
+	</form>
+	</td>
+	</tr>
+			{% endfor %}
+	</tbody>
+	</table> -->
+
+	<div class="centered-content">
+		<table class="product-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for product in products %}
+				<tr>
+					<td>{{ product.name }}</td>
+					<td>{{ product.description }}</td>
+					<td>{{ product.price }}</td>
+					<td>{{ product.stock_level }}</td>
+					<td>
+						<form action="{{ url_for('add_to_cart') }}" method="post">
+							<input type="hidden" name="product_id" value="{{ product.product_id }}">
+							<input type="submit" value="Add to Cart">
+						</form>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 	</div>
 	
+
+
+
+	
 	<!--- Three Column Section -->
-	<div class="container-fluid padding">
+	<!-- <div class="container-fluid padding">
 	<div class="row text-center padding">
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<i class="fas fa-code"></i>
@@ -81,7 +189,7 @@
 	</div>
 	
 	<!--- Two Column Section -->
-	<div class="container-fluid padding">
+	<!-- <div class="container-fluid padding">
 	<div class="row padding">
 		<div class="col-lg-6">
 			<h2>Not satisfied with your purchase?</h2>
@@ -95,54 +203,54 @@
 			<img src="\application\static\two-piece-logo.png" class="img-fluid">
 		</div>
 	</div> 
-	</div>
+	</div> -->
 	
-	<hr class="my-4">
+	<!-- <hr class="my-4"> -->
 	
 	<!--- Fixed background -->
-	<figure>
+	<!-- <figure>
 		<div class="fixed-wrap">
 			<div id="fixed">
 			</div>
 		</div>
-	</figure>
+	</figure> -->
 
 	<!-- - Footer section  -->
-<footer>
-	<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-md-4">
-			<img id="footer-logo" src="\application\static\two piece logo 2.png">
-			<hr class="light">
-			<p>123-456-7890</p>
-			<p>info@twopiece.com</p>
-			<p>4 Privet Drive</p>
-			<p>Little Whinging, Surrey</p>
+	<footer>
+		<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img id="footer-logo" src="\static\two piece logo 2.png">
+				<hr class="light">
+				<p>123-456-7890</p>
+				<p>info@twopiece.com</p>
+				<p>4 Privet Drive</p>
+				<p>Little Whinging, Surrey</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 4pm - 4:30 pm</p>
+				<p>Tuesday-Sunday: closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Relevant Links</h5>
+				<hr class="light">
+				<a class="footer-padding" href="{{ url_for('home') }}">Home</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('about') }}">About</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
+				<br>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; twopiece.com</h5>
+			</div>
+		</div> 
 		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Our Hours</h5>
-			<hr class="light">
-			<p>Monday: 4pm - 4:30 pm</p>
-			<p>Tuesday-Sunday: closed</p>
-		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Relevant Links</h5>
-			<hr class="light">
-			<a class="footer-padding" href="index.html">Home</a>
-			<br>
-			<a class="footer-padding" href="about.html">About</a>
-			<br>
-			<a class="footer-padding" href="contact.html">Contact</a>
-			<br>
-		</div>
-		<div class="col-12">
-			<hr class="light-100">
-			<h5>&copy; twopiece.com</h5>
-		</div>
-	</div> 
-	</div>
-	</footer>
+		</footer>
 </body>
 </html>

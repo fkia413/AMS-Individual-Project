@@ -11,14 +11,14 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/product2')
-def product2():
-    return render_template('prodcut2.html')
+# @app.route('/product2')
+# def product2():
+#     return render_template('cart.html')
 
 
 @app.route("/categories")
 def categories():
-    return render_template('category.html')
+    return render_template('categories.html')
 
 
 
@@ -27,7 +27,7 @@ def cart():
     all_product = Product.query.all()
     all_orders = Order_detail.query.all()
     total_amount = sum([order.quantity * order.price for order in all_orders])
-    return render_template('prodcut2.html', all_orders=all_orders, total_amount=total_amount, all_product=all_product)
+    return render_template('cart.html', all_orders=all_orders, total_amount=total_amount, all_product=all_product)
 
  
 
@@ -58,6 +58,12 @@ class PayForm(FlaskForm):
     cvc_num = StringField('Enter 3 digit CVC Number', validators=[
         DataRequired(),
         Length(min=3, max=3)])    
+    card_name = StringField('Enter your name', validators=[
+        DataRequired(),
+        Length(min=3, max=30)])    
+    exp_date = StringField('Enter 5 character expiry date', validators=[
+        DataRequired(),
+        Length(min=5, max=5)])    
     submit = SubmitField('Pay Now')
 
  
@@ -93,10 +99,15 @@ class ShipForm(FlaskForm):
 
  
 
-@app.route('/shipping', methods=['GET', 'POST'])
-def shipping():
+@app.route('/checkout', methods=['GET', 'POST'])
+def checkout():
     message = ""
     form = ShipForm()
+
+    all_product = Product.query.all()
+    all_orders = Order_detail.query.all()
+    total_amount = sum([order.quantity * order.price for order in all_orders])
+
     if request.method == 'POST':
         if form.validate_on_submit():
             first_name = form.first_name.data
@@ -116,7 +127,7 @@ def shipping():
             db.session.add(customer)
             db.session.commit()
             message = f'Thank you, {first_name} {last_name}. Address was saved'
-    return render_template('shipping.html', form=form, message=message)
+    return render_template('checkout.html', form=form, message=message, all_orders=all_orders, total_amount=total_amount, all_product=all_product)
 
 
 @app.route('/products', methods=['GET', 'POST'])
@@ -158,15 +169,26 @@ def add_to_cart():
     return redirect(url_for('products'))
 
 
-
 @app.route("/contact")
 def contact():
     return render_template('contact.html')
 
 @app.route("/about")
 def about():
-    return render_template('about_us.html')
+    return render_template('about.html')
 
-@app.route("/product1")
+@app.route("/product-1")
 def product1():
-    return render_template('product1.html')
+    return render_template('product-1.html')
+
+@app.route("/product-2")
+def product2():
+    return render_template('product-2.html')
+
+@app.route("/product-3")
+def product3():
+    return render_template('product-3.html')
+
+@app.route("/product-4")
+def product4():
+    return render_template('product-4.html')

@@ -9,174 +9,144 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="\application\static\style.css" rel="stylesheet">
+	<link href="\static\style.css" rel="stylesheet">
 </head>
 <body>
+	{% include 'navbar.html' %}
 
-<!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="\application\static\two piece logo 2.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="products.html">Products</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="categories.html">Categories</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cart.html">Cart</a>
-				</li>
-			</ul>
-		</div>
+
+	<!-- test -->
+    
+    <!-- </header>
+    <main class=cart-main>
+        <div class="cart-items">
+             Product items will be added dynamically using JavaScript -->
+        <!-- </div>
+        <div class="total">
+            Total: <span id="total-price">$0.00</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </main>
+    <script src="/application/static/script.js"></script> --> 
+
+	     <header class="cart-header">
+             <h1>Your Cart</h1>
+<main class="cart-main">
+<div class=cart-items>
+    <table>
+    <tr>
+    <th>Order Detail ID</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    </tr>
+     <tr>
+           
+           {% for order in all_orders %}
+    <td>{{ order.order_detail_id }}</td>
+    <td>
+            {% for product in all_product %}
+            {% if product.product_id == order.product_id %} 
+                {{product.name}}
+            {% endif %}
+            {% endfor %}
+    </td>
+    <td>{{ order.quantity }}</td>
+    <td>{{ order.price }}</td>
+    </tr>
+
+            
+            
+            {% endfor %}
+
+                    {% for order in all_orders %}
+            <tr>
+            <!-- ... other columns for the item details ... -->
+
+            
+
+                <!-- Column for updating the quantity -->
+            <td>
+            <form action="{{ url_for('update_quantity', order_detail_id=order.order_detail_id) }}" method="post">
+            <input type="number" name="new_quantity" value="{{ order.quantity }}" min="1">
+            <input type="submit" value="Update">
+            </form>
+            </td>
+
+            
+
+                <!-- Column for deleting the item -->
+            <td>
+            <form action="{{ url_for('delete_item', order_detail_id=order.order_detail_id) }}" method="post"> 
+            <input type="submit" value="Delete">
+            </form>
+            </td>
+            </tr>
+            {% endfor %}
+
+            
+
+
+
+
+    </table>
+
+
+    <h3 class="total">Total Amount: £ {{ total_amount }}</h3> <br>
+    <div>
+    <a id="checkout-btn" href="{{ url_for('checkout') }}">checkout</a>
+	<!-- <button id="checkout-btn">Proceed to Checkout</button> -->
     </div>
-    </nav>
-
-	<!-- <h1>Your Cart</h1>
-	<table>
-	<tr>
-	<th>Order Detail ID</th>
-	<th>Order ID</th>
-	<th>Quantity</th>
-	<th>Price</th>
-	</tr>
-			{% for order in all_orders %}
-	<tr>
-	<td>{{ order.order_detail_id }}</td>
-	<td>{{ order.order_id }}</td>
-	<td>{{ order.quantity }}</td>
-	<td>{{ order.price }}</td>
-	</tr>
-			{% endfor %}
-	</table>
-	<h3>Total Amount: {{ total_amount }}</h3> -->
-
-	<table>
-		<tr>
-		<th>Order Detail ID</th>
-		<th>Name</th>
-		<th>Quantity</th>
-		<th>Price</th>
-		</tr>
-		 <tr>
-			   
-			   {% for order in all_orders %}
-		<td>{{ order.order_detail_id }}</td>
-		<td>
-				{% for product in all_product %}
-				{% if product.product_id == order.product_id %} 
-					{{product.name}}
-				{% endif %}
-				{% endfor %}
-		</td>
-		<td>{{ order.quantity }}</td>
-		<td>{{ order.price }}</td>
-		</tr>
-	
-				
-				
-				{% endfor %}
-	
-						{% for order in all_orders %}
-				<tr>
-				<!-- ... other columns for the item details ... -->
-	
-				
-	
-					<!-- Column for updating the quantity -->
-				<td>
-				<form action="{{ url_for('update_quantity', basket_details_id=basket.basket_details_id) }}" method="post">
-				<input type="number" name="new_quantity" value="{{ order.quantity }}" min="1">
-				<input type="submit" value="Update">
-				</form>
-				</td>
-	
-				
-	
-					<!-- Column for deleting the item -->
-				<td>
-				<form action="{{ url_for('delete_item', basket_details_id=basket.basket_details_id) }}" method="post"> 
-				<input type="submit" value="Delete">
-				</form>
-				</td>
-				</tr>
-				{% endfor %}
-	
 				
 	
 	
 	
 	
 		</table>
+</div>
+</main>
 
-<!-- test -->
-    <header class="cart-header">
-        <h1>Your Cart</h1>
-    </header>
-    <main class=cart-main>
-        <div class="cart-items">
-            <!-- Product items will be added dynamically using JavaScript -->
-        </div>
-        <div class="total">
-            Total: <span id="total-price">$0.00</span>
-        </div>
-        <button id="checkout-btn">Proceed to Checkout</button>
-    </main>
-    <script src="/application/static/script.js"></script>
 
 
 
 
 	<!-- - Footer section  -->
-<footer>
-	<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-md-4">
-			<img id="footer-logo" src="\application\static\two piece logo 2.png">
-			<hr class="light">
-			<p>123-456-7890</p>
-			<p>info@twopiece.com</p>
-			<p>4 Privet Drive</p>
-			<p>Little Whinging, Surrey</p>
+	<footer>
+		<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img id="footer-logo" src="\static\two piece logo 2.png">
+				<hr class="light">
+				<p>123-456-7890</p>
+				<p>info@twopiece.com</p>
+				<p>4 Privet Drive</p>
+				<p>Little Whinging, Surrey</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 4pm - 4:30 pm</p>
+				<p>Tuesday-Sunday: closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Relevant Links</h5>
+				<hr class="light">
+				<a class="footer-padding" href="{{ url_for('home') }}">Home</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('about') }}">About</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
+				<br>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; twopiece.com</h5>
+			</div>
+		</div> 
 		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Our Hours</h5>
-			<hr class="light">
-			<p>Monday: 4pm - 4:30 pm</p>
-			<p>Tuesday-Sunday: closed</p>
-		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Relevant Links</h5>
-			<hr class="light">
-			<a class="footer-padding" href="index.html">Home</a>
-			<br>
-			<a class="footer-padding" href="about.html">About</a>
-			<br>
-			<a class="footer-padding" href="contact.html">Contact</a>
-			<br>
-		</div>
-		<div class="col-12">
-			<hr class="light-100">
-			<h5>&copy; twopiece.com</h5>
-		</div>
-	</div> 
-	</div>
-	</footer>
+		</footer>
 </body>
 </html>
 

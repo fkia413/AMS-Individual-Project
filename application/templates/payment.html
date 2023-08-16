@@ -1,39 +1,105 @@
-<html>
-    <head>
-        <title>Simple form</title>
-    </head>
-    <body>
-        <div class='form'>
-            <form method='POST' action=''>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Two Piece</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="\static\style.css" rel="stylesheet">
+</head>
+<body>
+	{% include 'navbar.html' %}
+    
+    <div class="pay-container">
+        <div class="form-container">
+            <h2>Payment Details</h2>
+            <form method="POST" action="">
                 {{ form.hidden_tag() }}
-                {{ form.first_name.label }} {{ form.first_name }}
-                <br>
-                {{ form.last_name.label }} {{ form.last_name }}
-                <br>
-                <br>
-                {{ form.email.label }} {{ form.email }}
-                <br>
-                <br>
-                {{ form.phone_num.label }} {{ form.phone_num }}
-                <br>
-                <br>
-                {{ form.address.label }} {{ form.address }}
-                <br>
-                <br>
-                <br>
                 <p>Enter Payment Details Below</p>
-                {{ form.card_num.label }} {{ form.card_num }}
-                <br>
-                {{ form.cvc_num.label }} {{ form.cvc_num }}
-                <br>
-
-                <br>
-
-                <br>
-                {{ form.submit }}
-                <br>
-            {{ message }}
+                <div class="form-group">
+                    <label for="card_name">{{ form.card_name.label }}</label>
+                    {{ form.card_name }}
+                </div>
+                <div class="form-group">
+                    <label for="card_num">{{ form.card_num.label }}</label>
+                    {{ form.card_num }}
+                </div>
+                <div class="form-group">
+                    <label for="exp_date">{{ form.exp_date.label }}</label>
+                    {{ form.exp_date }}
+                </div>
+                <div class="form-group">
+                    <label for="cvc_num">{{ form.cvc_num.label }}</label>
+                    {{ form.cvc_num }}
+                </div>
+                <button type="submit">Make Payment</button>
+                <p class="message">{{ message }}</p>
             </form>
         </div>
-    </body>
+    </div>
+
+    <!-- <div class='form'>
+        <form method='POST' action=''>
+            {{ form.hidden_tag() }}
+            <br>
+            <br>
+            <br>
+            <p>Enter Payment Details Below</p>
+            {{ form.card_num.label }} {{ form.card_num }}
+            <br>
+            {{ form.cvc_num.label }} {{ form.cvc_num }}
+            <br>
+            <br>
+            <br>
+            {{ form.submit }}
+            <br>
+        {{ message }}
+        </form>
+
+    </div> -->
+
+
+	<!-- - Footer section  -->
+	<footer>
+		<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img id="footer-logo" src="\static\two piece logo 2.png">
+				<hr class="light">
+				<p>123-456-7890</p>
+				<p>info@twopiece.com</p>
+				<p>4 Privet Drive</p>
+				<p>Little Whinging, Surrey</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 4pm - 4:30 pm</p>
+				<p>Tuesday-Sunday: closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Relevant Links</h5>
+				<hr class="light">
+				<a class="footer-padding" href="{{ url_for('home') }}">Home</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('about') }}">About</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
+				<br>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; twopiece.com</h5>
+			</div>
+		</div> 
+		</div>
+		</footer>
+</body>
 </html>
+

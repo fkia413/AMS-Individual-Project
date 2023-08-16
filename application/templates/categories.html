@@ -9,78 +9,85 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="\application\static\style.css" rel="stylesheet">
+	<link href="\static\style.css" rel="stylesheet">
 </head>
 <body>
+	{% include 'navbar.html' %}
 
-<!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="\application\static\two piece logo 2.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="products.html">Products</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="categories.html">Categories</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cart.html">Cart</a>
-				</li>
-			</ul>
-		</div>
+	<div class="container">
+        <h2 class="text-center">Product Categories</h2>
+        <div class="category-container">
+            <div class="category">
+                <h3 class="category-title">Apparel</h3>
+                <div class="dropdown">
+                    <div class="dropdown-trigger">Show Products</div>
+                    <div class="dropdown-content">
+                        <div class="product">
+                            <img src="\static\product-1.png" alt="One Piece Puffy Pink Hoodie">
+                            <p><a href="{{ url_for('product1') }}">One Piece Puffy Pink Hoodie</a></p>
+                        </div>
+                        <div class="product">
+                            <img src="\static\product-3.png" alt="One Piece 'Wings of Freedom' Trainers">
+                            <p><a href="{{ url_for('product3') }}">One Piece 'Wings of Freedom' Trainers</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3 class="category-title">Accessories</h3>
+                <div class="dropdown">
+                    <div class="dropdown-trigger">Show Products</div>
+                    <div class="dropdown-content">
+                        <div class="product">
+                            <img src="\static\product-2.png" alt="One Piece Mega Massive Mug">
+                            <p><a href="{{ url_for('product2') }}">One Piece Mega Massive Mug</a></p>
+                        </div>
+                        <div class="product">
+                            <img src="\static\product-4.png" alt="One Piece Rudolph the Reindeer Mascot">
+                            <p><a href="{{ url_for('product4') }}">One Piece Rudolph the Reindeer Mascot</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </nav>
 
 	<!-- - Footer section  -->
-<footer>
-	<div class="container-fluid padding">
-	<div class="row text-center">
-		<div class="col-md-4">
-			<img id="footer-logo" src="\application\static\two piece logo 2.png">
-			<hr class="light">
-			<p>123-456-7890</p>
-			<p>info@twopiece.com</p>
-			<p>4 Privet Drive</p>
-			<p>Little Whinging, Surrey</p>
+	<footer>
+		<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img id="footer-logo" src="\static\two piece logo 2.png">
+				<hr class="light">
+				<p>123-456-7890</p>
+				<p>info@twopiece.com</p>
+				<p>4 Privet Drive</p>
+				<p>Little Whinging, Surrey</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 4pm - 4:30 pm</p>
+				<p>Tuesday-Sunday: closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Relevant Links</h5>
+				<hr class="light">
+				<a class="footer-padding" href="{{ url_for('home') }}">Home</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('about') }}">About</a>
+				<br>
+				<a class="footer-padding" href="{{ url_for('contact') }}">Contact</a>
+				<br>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; twopiece.com</h5>
+			</div>
+		</div> 
 		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Our Hours</h5>
-			<hr class="light">
-			<p>Monday: 4pm - 4:30 pm</p>
-			<p>Tuesday-Sunday: closed</p>
-		</div>
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>Relevant Links</h5>
-			<hr class="light">
-			<a class="footer-padding" href="index.html">Home</a>
-			<br>
-			<a class="footer-padding" href="about.html">About</a>
-			<br>
-			<a class="footer-padding" href="contact.html">Contact</a>
-			<br>
-		</div>
-		<div class="col-12">
-			<hr class="light-100">
-			<h5>&copy; twopiece.com</h5>
-		</div>
-	</div> 
-	</div>
-	</footer>
+		</footer>
 </body>
 </html>
