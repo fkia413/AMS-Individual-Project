@@ -104,15 +104,19 @@ I made 2 feature branches - 1 for html and one for back end. Here is the screens
 
 ## 5.ERD Diagram
 
-screenshot and give 1 sentence to explain "this is the tables i have and how they relate to each other"
+![ERD](https://github.com/fkia413/ProjectRepo/assets/131884777/409ca942-8907-4679-bd28-1b71dcd0ae16)
+
+These are the tables I have. They all have some relation to each other.
 
 ## 6. Jenkins section
 
+I used Jenkins as a pipeline to open my website while I was working on it. Jenkins also handled my test automation. The majority of the tests failed, but some of them passed. 
 
-6. Jenkins section - included test reports as a sub-section and analyse them
+![MicrosoftTeams-image (3)](https://github.com/fkia413/ProjectRepo/assets/131884777/8e2645dd-45ff-42d7-ab12-2ea44ffb0304)
 
-the way that im using jenkins as a pipeline means i can automate the code.
-jenkins also handled my test automation and some screenshots of tests passing and faileing and wha ti encountered with the test.
+
+included test reports as a sub-section and analyse them
+
 
 ## 7. Future Steps
 
