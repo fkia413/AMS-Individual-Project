@@ -116,8 +116,7 @@ jenkins also handled my test automation and some screenshots of tests passing an
 
 ## 7. Future Steps
 
-If I continued with this project, 
-further analysis, what would i do next if i continued with this project id add this feature create new database relationship etc.
+If I continued with this project, I'd work on making all of the front-end look and feel fantastic. I'd also add more products for customers to buy. 
 
 ## 8. Licensing
 
