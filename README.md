@@ -69,6 +69,9 @@ Also included some risks which I put in my risk assessment in the next section.
 
 ### Risk Assessment
 
+![risk asss](https://github.com/fkia413/ProjectRepo/assets/131884777/6e9fa5fc-48d5-4ff7-b91e-bbb72fe65728)
+
+
 Add in risk assessment screenshot from excel and summarise it [https://qa-community.co.uk/~/_/learning/agile/agile--risk-assessments] ("a record of any issues or risks encountered during project creation, Based on results, changes were made to the solution and discussed at a good level"). 
 
 ### Evolution of Ideas
