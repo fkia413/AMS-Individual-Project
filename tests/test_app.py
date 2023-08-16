@@ -17,6 +17,3 @@ class TestBase(TestCase):
 def setUp(self):
      db.drop_all()
      db.create_all()
-
-     
-    
