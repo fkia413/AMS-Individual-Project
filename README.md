@@ -68,7 +68,10 @@ I had a lot of ideas for what I wanted the front-end to look like and the functi
 
 ![before](https://github.com/fkia413/ProjectRepo/assets/131884777/7133502a-b17b-4a7e-a846-cef00d74df2c)
 
-![after](https://github.com/fkia413/ProjectRepo/assets/131884777/2e9b6688-9734-430d-bf3e-ad7e65e78502)
+![after](https://github.com/fkia413/ProjectRepo/assets/131884777/2e9b6688-9734-430d-bf3e-ad7e65e78502) 
+
+![Uploading homepage.png…]()
+
 
 
 ### Summary of Kanban board
