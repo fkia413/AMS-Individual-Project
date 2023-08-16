@@ -96,9 +96,28 @@ Here are some images of what my Kanban board looked like at the beginning, middl
 
 ![Screenshot (272)](https://github.com/fkia413/ProjectRepo/assets/131884777/fb00eb82-8cc4-41ce-8bba-792764719f65)
 
-##  4. How I used Feature-Branch Model: 
+## 4. How I used Feature-Branch Model
 
 I made 2 feature branches - 1 for html and one for back end. Here is the screenshot of the insights graph:
 
+## 5. ERD Diagram
 
 
+
+screenshot and give 1 sentence to explain "this is the tables i have and how they relate to each other"
+
+## 6 Jenkins section
+
+
+6. Jenkins section - included test reports as a sub-section and analyse them
+
+the way that im using jenkins as a pipeline means i can automate the code.
+jenkins also handled my test automation and some screenshots of tests passing and faileing and wha ti encountered with the test.
+
+7. Future Steps: further analysis, what would i do next if i continued with this project id add this feature create new database relationship etc.
+
+8. Licensing: i used vscode i used mysql for database
+
+9. Contributors: w3schools, Qa community, bootstrap, Innocent website
+
+10. Acknowledgements: to trainer, colleagues etc.
