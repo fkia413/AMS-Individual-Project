@@ -89,7 +89,7 @@ Here are some images of what my Kanban board looked like at the beginning, middl
 
 ## 4. How I used Feature-Branch Model
 
-I made 2 feature branches - 1 for html and one for back end. Here is the screenshot of the insights graph:
+I made 2 feature branches - 1 for html and one for back end. It kept my files folders organised. Here is the screenshot of the insights graph:
 
 ![insights](https://github.com/fkia413/ProjectRepo/assets/131884777/5b73979b-289a-4ccb-a54f-9ff71c23c0dd)
 
@@ -98,7 +98,12 @@ I made 2 feature branches - 1 for html and one for back end. Here is the screens
 <img width="886" alt="ERD" src="https://github.com/fkia413/ProjectRepo/assets/131884777/8f4d9665-a759-49f0-b489-a560d4c3665d">
 
 
-These are the tables I have. They all have some relation to each other.
+These are the 4 tables I creates. They all have some relation to each other via foreign keys. 
+
+1. Customer is for shipping details.
+2. Product is for displaying the stock onto the product page.
+3. Order is to add and display on the cart page which is linked with the customer table through a foreign key (since one customer can have multiple orders).
+4. Order_Detail was the table used to display, add and delete things from the cart and it was linked with product_id and order_id through foreign keys.
 
 ## 6. Jenkins section
 
@@ -113,7 +118,7 @@ Jenkins also handled my test automation. The majority of the tests failed, but s
 
 ## 7. Future Steps
 
-If I continued with this project, I'd work on making all of the front-end look and feel fantastic. I'd also add more products for customers to buy. 
+If I continued with this project, I'd work on making all of the front-end look and feel fantastic. I'd also add more products for customers to buy. I'd also potentially add another table to my ERD diagram and make the back-end offer even more functionality, although I'll need to make a user story and tasks for it before deciding. 
 
 ## 8. Licensing
 
