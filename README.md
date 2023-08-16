@@ -126,7 +126,7 @@ I used VSCode for the code and SQLLite for database. I also used Jira for projec
 
 ## Contributors
 
-W3schools, Qa community, bootstrap.
+W3schools, QA community, Bootstrap, Earl Gray's amazing code.
 
 ## 10. Acknowledgements
 
