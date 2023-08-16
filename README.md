@@ -102,7 +102,11 @@ These are the tables I have. They all have some relation to each other.
 
 ## 6. Jenkins section
 
-I used Jenkins as a pipeline to open my website while I was working on it. Jenkins also handled my test automation. The majority of the tests failed, but some of them passed. 
+I used Jenkins as a pipeline to open my website while I was working on it. 
+
+![jen2](https://github.com/fkia413/ProjectRepo/assets/131884777/e53c7e34-f04e-426a-82a7-bb196b96759b)
+
+Jenkins also handled my test automation. The majority of the tests failed, but some of them passed. 
 
 ![jenkins](https://github.com/fkia413/ProjectRepo/assets/131884777/485f597a-732d-4a55-8fc2-116aa6070c59)
 
