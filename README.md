@@ -122,7 +122,7 @@ If I continued with this project, I'd work on making all of the front-end look a
 
 ## 8. Licensing
 
-I used VSCode for the code and SQLLite for database. 
+I used VSCode for the code and SQLLite for database. I also used Jira for project management and Jenkins for running the web application.
 
 ## Contributors
 
