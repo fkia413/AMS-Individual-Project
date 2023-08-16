@@ -78,7 +78,23 @@ This displays some of the risks that I may have encountered during the project, 
 
 I had a lot of ideas for what I wanted the front-end to look like and the functionality I wanted. An example of this is the home page. I wanted the home page to have a carousel that switches between 3 images and can be manually controlled while also having the functionality to switch automatically. I encountered a lot of errors with it at first. One error was that the carousel indicators to manually change it were at the bottom of the website below the footer instead of at the bottom of the images. I fixed this by trying different code and using w3schools. Here is the difference in the code (before and after). 
 
+![before](https://github.com/fkia413/ProjectRepo/assets/131884777/7133502a-b17b-4a7e-a846-cef00d74df2c)
+
+![after](https://github.com/fkia413/ProjectRepo/assets/131884777/2e9b6688-9734-430d-bf3e-ad7e65e78502)
+
+
 ### Summary of Kanban board
 
 Here are some images of what my Kanban board looked like at the beginning, middle and end.
+
+![Screenshot (268)](https://github.com/fkia413/ProjectRepo/assets/131884777/526b7730-807d-497f-aaaa-8b7425decec8)
+
+![Screenshot (269)](https://github.com/fkia413/ProjectRepo/assets/131884777/f0887f33-f826-4acb-8ac1-e6a132de56dc)
+
+![Screenshot (271)](https://github.com/fkia413/ProjectRepo/assets/131884777/9868571c-8099-4de5-a936-0b35a52d9bb6)
+
+
+![Screenshot (272)](https://github.com/fkia413/ProjectRepo/assets/131884777/fb00eb82-8cc4-41ce-8bba-792764719f65)
+
+
 
