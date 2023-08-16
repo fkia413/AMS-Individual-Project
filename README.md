@@ -65,19 +65,20 @@ I created 7 user stories that encompassed the key areas of my project, including
 ![user story](https://github.com/fkia413/ProjectRepo/assets/131884777/0c4e92d2-aec5-4f6d-a145-32141313e1e6)
 
 
-Also included some risks which I put in my risk assessment in the next section.
+I also included some risks which I put in my risk assessment in the next section.
 
 ### Risk Assessment
 
+
 ![risk asss](https://github.com/fkia413/ProjectRepo/assets/131884777/6e9fa5fc-48d5-4ff7-b91e-bbb72fe65728)
 
-
-Add in risk assessment screenshot from excel and summarise it [https://qa-community.co.uk/~/_/learning/agile/agile--risk-assessments] ("a record of any issues or risks encountered during project creation, Based on results, changes were made to the solution and discussed at a good level"). 
+This displays some of the risks that I may have encountered during the project, including the steps to mitigate any negative impacts. Based on this risk assessment, I was able to make changed to my code to decrease the possibility of the risks happening. 
 
 ### Evolution of Ideas
 
-Also in this space, Showcased evolution of ideas from base design to final designs -> refactoring code because you wanted it to do something else so take screenshot before and after i encourntered soem errors where i was able to improve and refactor my code.
+I had a lot of ideas for what I wanted the front-end to look like and the functionality I wanted. An example of this is the home page. I wanted the home page to have a carousel that switches between 3 images and can be manually controlled while also having the functionality to switch automatically. I encountered a lot of errors with it at first. One error was that the carousel indicators to manually change it were at the bottom of the website below the footer instead of at the bottom of the images. I fixed this by trying different code and using w3schools. Here is the difference in the code (before and after). 
 
 ### Summary of Kanban board
 
-Finally, show some screenshots of entire Kanban board how it looked at the beginning vs. middle vs. end. 
+Here are some images of what my Kanban board looked like at the beginning, middle and end.
+
