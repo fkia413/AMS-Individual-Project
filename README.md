@@ -100,5 +100,6 @@ Here are some images of what my Kanban board looked like at the beginning, middl
 
 I made 2 feature branches - 1 for html and one for back end. Here is the screenshot of the insights graph:
 
+![insights](https://github.com/fkia413/ProjectRepo/assets/131884777/5b73979b-289a-4ccb-a54f-9ff71c23c0dd)
 
 
