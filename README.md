@@ -50,6 +50,8 @@ I created 7 user stories that encompassed the key areas of my project, including
 
 ![user story](https://github.com/fkia413/ProjectRepo/assets/131884777/0c4e92d2-aec5-4f6d-a145-32141313e1e6)
 
+![rre](https://github.com/fkia413/ProjectRepo/assets/131884777/74480d8e-0d9a-4725-99b6-6028d86c6dd5)
+
 
 I also included some risks which I put in my risk assessment in the next section.
 
@@ -90,7 +92,8 @@ I made 2 feature branches - 1 for html and one for back end. Here is the screens
 
 ## 5.ERD Diagram
 
-![ERD](https://github.com/fkia413/ProjectRepo/assets/131884777/409ca942-8907-4679-bd28-1b71dcd0ae16)
+<img width="886" alt="ERD" src="https://github.com/fkia413/ProjectRepo/assets/131884777/8f4d9665-a759-49f0-b489-a560d4c3665d">
+
 
 These are the tables I have. They all have some relation to each other.
 
