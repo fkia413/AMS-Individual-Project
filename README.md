@@ -106,7 +106,7 @@ I made 2 feature branches - 1 for html and one for back end. Here is the screens
 
 screenshot and give 1 sentence to explain "this is the tables i have and how they relate to each other"
 
-## 6 Jenkins section
+## 6. Jenkins section
 
 
 6. Jenkins section - included test reports as a sub-section and analyse them
@@ -114,10 +114,20 @@ screenshot and give 1 sentence to explain "this is the tables i have and how the
 the way that im using jenkins as a pipeline means i can automate the code.
 jenkins also handled my test automation and some screenshots of tests passing and faileing and wha ti encountered with the test.
 
-7. Future Steps: further analysis, what would i do next if i continued with this project id add this feature create new database relationship etc.
+## 7. Future Steps
 
-8. Licensing: i used vscode i used mysql for database
+If I continued with this project, 
+further analysis, what would i do next if i continued with this project id add this feature create new database relationship etc.
 
-9. Contributors: w3schools, Qa community, bootstrap, Innocent website
+## 8. Licensing
 
-10. Acknowledgements: to trainer, colleagues etc.
+I used VSCode for the code and SQLLite for database. 
+
+## Contributors
+
+W3schools, Qa community, bootstrap.
+
+## 10. Acknowledgements
+
+To my trainer, Earl.
+To my colleagues for cheering me on.
