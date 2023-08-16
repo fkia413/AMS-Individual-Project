@@ -62,6 +62,9 @@ I spent 10 minutes at the start of each day planning what I would work on. I sor
 
 I created 7 user stories that encompassed the key areas of my project, including the home page and log in button. Inside each of my user stories, I stored all of the related tasks to keep it well-structured. I also included acceptance criteria in the description of the user stories to make my objectives more clear.
 
+![user story](https://github.com/fkia413/ProjectRepo/assets/131884777/0c4e92d2-aec5-4f6d-a145-32141313e1e6)
+
+
 Also included some risks which I put in my risk assessment in the next section.
 
 ### Risk Assessment
