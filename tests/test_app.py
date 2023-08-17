@@ -15,35 +15,54 @@ class TestBase(TestCase):
         return app
     
 def setUp(self):
-     db.drop_all()
-     db.create_all()
-class TestBase(TestCase):
+    db.drop_all()
+    db.create_all()
+    today = datetime.today()
+    db.session.add(User(
+            name = "mrtest",
+            email = "test@test.co.uk",
+            phone = "0000000000",
+            password = "testing" 
+        ))
+        db.session.commit()
 
-    def create_app(self):
+    def tearDown(self):
+        db.session.remove()
 
-        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///",
+class TestModels(TestBase):
+    def test_user_model(self):
+        test = User.query.filter_by(name="mrtest").first()
+        self.assertEqual(test.name, "test")
 
-                          SECRET_KEY='TEST_SECRET_KEY',
+    def test_products(self):
+        response = self.client.get('/products', follow_redirects=True)
+        self.assertIn(b"One Piece Puffy Pink Hoodie", response.data)
 
-                          DEBUG=True,
+    def test_home(self):
+        response = self.client.get('/', follow_redirects=True)
+        self.assertIn(b"Welcome to Two Piece!", response.data)
 
-                          WTF_CSRF_ENABLED=False
+    def test_product_1(self):
+        response = self.client.get('/product/1', follow_redirects=True)
+        self.assertIn(b"One Piece Puffy Pink Hoodie", response.data)
+    
+    def test_category(self):
+        response = self.client.get('/category', follow_redirects=True)
+        self.assertIn(b"Apparel", response.data)
+        self.assertIn(b"Accessories", response.data)
 
-                          )
-
-        return app
+    def test_about(self):
+        response = self.client.get('/about', follow_redirects=True)
+        self.assertIn(b"About", response.data)
 
 class TestRoutes(TestBase):
     def test_home_route(self):
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 2000)
-
  
     def test_products_route(self):
         response = self.client.get(url_for('products'))
         self.assertIn(b'TestProduct', response.data)
-
- 
 
     def test_add_to_cart_route(self):
         # Mock product addition to cart
