@@ -20,9 +20,7 @@ def setUp(self):
     today = datetime.today()
     db.session.add(User(
             name = "mrtest",
-            email = "test@test.co.uk",
-            phone = "0000000000",
-            password = "testing" 
+            email = "test@test.co.uk";
         ))
         db.session.commit()
 
